@@ -5,5 +5,5 @@ description = "Snapdragon-oriented multimodal AI assistant"
 readme = "README.md"
 requires-python = ">=3.10"
 
-[tool.fastapi]
+[tool.vercel]
 entrypoint = "backend.main:app"
