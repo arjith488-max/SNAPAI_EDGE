@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-09-25T18:34:52.388717",
+  "os": {
+    "system": "Windows",
+    "release": "10",
+    "version": "10.0.26200",
+    "machine": "AMD64"
+  },
+  "python": {
+    "version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "executable": "C:\\Users\\HP\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe"
+  },
+  "cpu": {
+    "brand": "Intel(R) Core(TM) i7-10610U CPU @ 1.80GHz",
+    "architecture": "AMD64",
+    "cores_physical": 4,
+    "cores_logical": 8,
+    "frequency_mhz": 2304.0,
+    "is_arm64": false,
+    "is_snapdragon": false
+  },
+  "memory": {
+    "total_gb": 15.77,
+    "available_gb": 5.09,
+    "percent_used": 67.7
+  },
+  "disk": {
+    "total_gb": 377.7,
+    "free_gb": 168.02
+  },
+  "gpus": [
+    {
+      "name": "Intel(R) UHD Graphics",
+      "vram_gb": 1.0,
+      "driver_version": "31.0.101.2140",
+      "is_adreno": false,
+      "is_qualcomm": false
+    }
+  ],
+  "ai_acceleration": {
+    "directml": false,
+    "onnxruntime": true,
+    "onnxruntime_directml": false,
+    "onnxruntime_cuda": false,
+    "cuda": false,
+    "rocm": false,
+    "npu_available": true,
+    "qualcomm_ai_engine": false,
+    "notes": [
+      "ONNX Runtime 1.27.0 available",
+      "NPU device detected: {\n    \"Name\":  \"Microsoft Input Configuration Device\"\n}"
+    ],
+    "onnxruntime_providers": [
+      "AzureExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "pytorch": true,
+    "pytorch_version": "2.8.0+cpu"
+  },
+  "python_packages": {
+    "fastapi": "installed",
+    "uvicorn": "installed",
+    "sqlalchemy": "installed",
+    "pydantic": "installed",
+    "pymupdf": "not_installed",
+    "pytesseract": "not_installed",
+    "pillow": "not_installed",
+    "numpy": "installed",
+    "sentence_transformers": "not_installed",
+    "chromadb": "installed",
+    "openai": "installed",
+    "psutil": "installed",
+    "httpx": "installed",
+    "python-multipart": "not_installed"
+  },
+  "internet_connected": true,
+  "node_version": "v22.18.0",
+  "summary": {
+    "is_snapdragon": false,
+    "is_arm64": false,
+    "has_npu": true,
+    "has_directml": false,
+    "has_cuda": false,
+    "has_onnxruntime": true,
+    "internet_connected": true,
+    "recommended_mode": "cloud_fallback_primary"
+  }
+}

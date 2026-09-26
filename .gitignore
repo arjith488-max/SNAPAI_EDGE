@@ -1,0 +1,69 @@
+# SnapAI Edge - Git Ignore
+# ─── Secrets ──────────────────────────────────────────────
+.env
+*.key
+*.pem
+secrets/
+credentials/
+*.secret
+
+# ─── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+*.cover
+.hypothesis/
+venv/
+.venv/
+env/
+ENV/
+
+# ─── Node / Frontend ──────────────────────────────────────
+node_modules/
+dist/
+build/
+.next/
+out/
+.nuxt/
+.cache/
+
+# ─── Database ────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ─── Uploads / Models ────────────────────────────────────
+uploads/
+local_models/*.bin
+local_models/*.gguf
+local_models/*.onnx
+local_models/*.pt
+local_models/*.safetensors
+
+# ─── Editor ───────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ─── Logs ────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── Benchmarks (raw data) ───────────────────────────────
+benchmarks/raw/

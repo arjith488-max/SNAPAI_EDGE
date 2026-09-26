@@ -1,0 +1,44 @@
+# SnapAI Edge - Backend Dependencies
+# Install with: pip install -r requirements.txt
+
+# ─── Web Framework ────────────────────────────────────────
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.9
+
+# ─── Database ─────────────────────────────────────────────
+sqlalchemy>=2.0.36
+
+# ─── Data / AI ────────────────────────────────────────────
+pydantic>=2.9.2
+numpy>=1.26.0
+httpx>=0.27.2
+aiofiles>=23.2.1
+
+# ─── Vector Store ─────────────────────────────────────────
+chromadb>=0.5.0
+
+# ─── Document Processing ──────────────────────────────────
+pymupdf>=1.24.0       # PDF parsing
+pillow>=10.0.0        # Image processing
+# python-docx>=1.1.0  # DOCX support (optional)
+
+# ─── OCR (optional — install separately) ──────────────────
+# pytesseract>=0.3.10
+# easyocr>=1.7.0
+
+# ─── Speech (optional) ────────────────────────────────────
+# faster-whisper>=1.0.0
+
+# ─── Environment ──────────────────────────────────────────
+python-dotenv>=1.0.1
+
+# ─── System Monitoring ────────────────────────────────────
+psutil>=6.0.0
+
+# ─── Cloud AI SDKs ────────────────────────────────────────
+openai>=1.51.0       # OpenAI fallback + Whisper API
+
+# ─── ONNX Runtime (already installed) ────────────────────
+# onnxruntime>=1.19.0     # CPU
+# onnxruntime-directml    # DirectML (Snapdragon/Windows GPU)
