@@ -82,7 +82,7 @@ SnapAI Edge integrates OpenAI using the official Python SDK.
 1. Obtain an API key from the [OpenAI Platform](https://platform.openai.com).
 2. Configure `.env` in the project root:
    ```env
-   OPENAI_API_KEY=your_openai_api_key_here
+   OPENAI_API_KEY=
    OPENAI_MODEL=gpt-4o-mini
    OPENAI_BASE_URL=https://api.openai.com/v1
    ```
@@ -97,7 +97,7 @@ SnapAI Edge connects to Google Gemini via the Google Generative AI SDK.
 1. Generate an API key in [Google AI Studio](https://aistudio.google.com).
 2. Add your key to `.env`:
    ```env
-   GEMINI_API_KEY=your_gemini_api_key_here
+   GEMINI_API_KEY=
    GEMINI_MODEL=gemini-1.5-flash
    ```
 3. Supported models include `gemini-1.5-flash`, `gemini-1.5-pro`, and `gemini-2.0-flash`.
@@ -237,7 +237,7 @@ JINA_EMBED_MODEL=jina-embeddings-v3
 # Server Settings
 BACKEND_HOST=127.0.0.1
 BACKEND_PORT=8000
-SECRET_KEY=change-this-to-a-random-secret-key
+SECRET_KEY=
 
 # Privacy & Routing
 DEFAULT_PRIVACY_MODE=local_first

@@ -1,13 +1,16 @@
 # SnapAI Edge - Git Ignore
-# ─── Secrets ──────────────────────────────────────────────
+
+# ─── Environment / Secrets ──────────────────────────────────
 .env
+.env.*
+!.env.example
 *.key
 *.pem
+*.secret
 secrets/
 credentials/
-*.secret
 
-# ─── Python ───────────────────────────────────────────────
+# ─── Python ────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *$py.class
@@ -30,7 +33,7 @@ venv/
 env/
 ENV/
 
-# ─── Node / Frontend ──────────────────────────────────────
+# ─── Node / Frontend ───────────────────────────────────────
 node_modules/
 dist/
 build/
@@ -38,22 +41,34 @@ build/
 out/
 .nuxt/
 .cache/
+.vite/
 
-# ─── Database ────────────────────────────────────────────
+# ─── Database & Local Storage ──────────────────────────────
 *.db
 *.sqlite
 *.sqlite3
+chroma_db/
 
-# ─── Uploads / Models ────────────────────────────────────
+# ─── Runtime / Uploads / Models ─────────────────────────────
+tmp/
+temp/
 uploads/
-local_models/*.bin
-local_models/*.gguf
-local_models/*.onnx
-local_models/*.pt
-local_models/*.safetensors
+runtime/
+cache/
+local_models/
+models/
+*.bin
+*.gguf
+*.onnx
+*.pt
+*.safetensors
 
-# ─── Editor ───────────────────────────────────────────────
-.vscode/settings.json
+# ─── Generated Reports ─────────────────────────────────────
+hardware_report.json
+benchmark_results.json
+
+# ─── Editor & OS ───────────────────────────────────────────
+.vscode/
 .idea/
 *.swp
 *.swo
@@ -61,9 +76,6 @@ local_models/*.safetensors
 .DS_Store
 Thumbs.db
 
-# ─── Logs ────────────────────────────────────────────────
+# ─── Logs ──────────────────────────────────────────────────
 *.log
 logs/
-
-# ─── Benchmarks (raw data) ───────────────────────────────
-benchmarks/raw/
